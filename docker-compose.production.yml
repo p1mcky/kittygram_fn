@@ -12,7 +12,7 @@ services:
     volumes:
       - pg_data:/var/lib/postgresql/data
   backend:
-    image: pimcky/kittygram_backend
+    image: pimcky/kittygram_backend:latest
     env_file: .env
     volumes:
       - static:/static_backend
